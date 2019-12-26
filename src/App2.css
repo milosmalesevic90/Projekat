@@ -1,0 +1,37 @@
+#root{
+    background-color: #000;
+    
+    color: #A9A9A9;
+    font-size: 1em;
+    line-height: 2em;
+    text-align: center;
+}
+.topiclist {
+    width: 500px;
+  height: 500px;
+  background-color: #000;
+    
+    color: #A9A9A9;
+    font-size: 1em;
+    line-height: 2em;
+  overflow-y: auto;
+  margin: 50px auto;
+  
+  border: solid 4px whitesmoke;
+  text-align: left;
+  
+  
+  }
+.poruke{
+    width: 500px;
+  height: 500px;
+  background-color: #000;
+    
+    color: #A9A9A9;
+    font-size: 1em;
+    line-height: 2em;
+  overflow-y: auto;
+  margin: 50px auto;
+  
+  border: solid 4px whitesmoke;
+}

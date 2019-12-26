@@ -20,10 +20,12 @@ const Content =({setUser,user,})=>{
          
                <Switch>
                    <Route exact path='/' component={TopicList}/>
+                   <Route path='/newtopic' component={()=><NewTopic user={user}/> }/>
                    <Route path='/register'component={(props)=> <Register setUser={setUser}{...props}/>}/>
                    <Route path='/login' component={(props) => <Login setUser={setUser} {...props}/>} />
                    <Route path='/profile' component={() => <Profile  user={user}/>} />
-                   <Route path='/topic' component={()=><NewTopic user={user}/> }/>
+                   
+                   <Route path='/topic/:topic_id' component={(props)=><Topic user={user} {...props}/>}/>
                    
                </Switch>
           

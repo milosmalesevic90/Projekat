@@ -12,6 +12,7 @@ const Header = ({ logedIn, setUser, history, user }) => {
                     <div className='nav-item'>
                         <Link className='profil' to='/profile'>Welcome : {user.username}</Link><br/>
                         <Link to='/'><button className='header-btn' id="logout-btn" onClick={() => setUser()}>LogOut</button></Link>
+                        <Link to='/newtopic'><button className='header-btn'>New Topic</button></Link>
                     </div>
                 </nav>
             </header>
@@ -26,6 +27,7 @@ const Header = ({ logedIn, setUser, history, user }) => {
                     <div className='nav-items'>
                         <Link to='/register'><button className='header-btn'>Register</button></Link>
                         <Link to='/login'><button className='header-btn'>Login</button></Link>
+                        
                     </div>
                 </nav>
             </header>

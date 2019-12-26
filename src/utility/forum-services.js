@@ -1,6 +1,7 @@
 const POST = 'https://coetus.herokuapp.com/api/forum/users'
 const GET = 'https://coetus.herokuapp.com/api/forum/users'
 const PUT = 'https://coetus.herokuapp.com/api/forum/users'
+const api = 'https://coetus.herokuapp.com/api/forum/message/'
 
 
 
@@ -55,6 +56,10 @@ function topicMessage(username,topic_id,message){
     }).then(res => res.json())
     return res
 }
+function getMsnOnTpc(id){
+    return fetch(`${api}${id}`).then(res=>res.json())
+}
+
 
 
 export {
@@ -63,6 +68,7 @@ export {
     allTopic,
     userInfo,
     newTopic,
-    topicMessage
+    topicMessage,
+    getMsnOnTpc
    
 }

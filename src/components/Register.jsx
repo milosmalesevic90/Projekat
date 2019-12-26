@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { register } from '../utility/forum-services'
+import { withRouter } from 'react-router-dom'
 
 const Register =({setUser,history})=>{
     const [name,setName]=useState('')
@@ -37,6 +38,7 @@ const Register =({setUser,history})=>{
         .then(data=>{
             if(data.success){
                 console.log(data)
+                history.push('/login')
             }
         })
         setName('')
@@ -73,4 +75,4 @@ const Register =({setUser,history})=>{
     )
 }
 
-export default Register
+export default withRouter(Register)

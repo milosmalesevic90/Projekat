@@ -26,6 +26,8 @@ const NewTopic = ({user})=>{
     
 
     return(
+        <>
+        <h2>ADD TOPIC</h2>
         <form>
             <input type="text" placeholder="New Topic" value={topic} required onInput={e=>{
                 setTopic(e.target.value)
@@ -42,6 +44,7 @@ const NewTopic = ({user})=>{
 
 
         </form>
+        </>
     )
 }
 
