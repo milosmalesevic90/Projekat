@@ -7,7 +7,7 @@ const Header = ({ logedIn, setUser, history, user }) => {
         return (
             <header>
                 <nav>
-                <Link to='/'>HOME</Link>
+                <h1><Link to='/'>HOME</Link></h1>
                     <hr />
                     <div className='nav-item'>
                         <Link className='profil' to='/profile'>Welcome : {user.username}</Link><br/>
